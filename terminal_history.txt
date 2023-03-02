@@ -1,0 +1,50 @@
+   39  __conda_exe() (     "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"; )
+   40  __conda_hashr() {     if [ -n "${ZSH_VERSION:+x}" ]; then         \rehash;     elif [ -n "${POSH_VERSION:+x}" ]; then         :  # pass
+   41      else         \hash -r;     fi; }
+   42  __conda_activate() {     if [ -n "${CONDA_PS1_BACKUP:+x}" ]; then
+   43          PS1="$CONDA_PS1_BACKUP";         \unset CONDA_PS1_BACKUP;     fi;     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix "$@")" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   44  __conda_reactivate() {     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix reactivate)" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   45  conda() {     \local cmd="${1-__missing__}";     case "$cmd" in         activate|deactivate)             __conda_activate "$@";             ;;         install|update|upgrade|remove|uninstall)             __conda_exe "$@" || \return;             __conda_reactivate;             ;;         *)             __conda_exe "$@";             ;;     esac; }
+   46  if [ -z "${CONDA_SHLVL+x}" ]; then     \export CONDA_SHLVL=0
+   47      if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then         PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}";     else         PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}";     fi;     \export PATH; 
+   48      if [ -z "${PS1+x}" ]; then         PS1=;     fi; fi
+   49  export CONDA_EXE='C:/Users/1017c/anaconda3\Scripts\conda.exe'
+   50  export _CE_M=''
+   51  export _CE_CONDA=''
+   52  export CONDA_PYTHON_EXE='C:/Users/1017c/anaconda3\python.exe'
+   53  # Copyright (C) 2012 Anaconda, Inc
+   54  # SPDX-License-Identifier: BSD-3-Clause
+   55  __conda_exe() (     "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"; )
+   56  __conda_hashr() {     if [ -n "${ZSH_VERSION:+x}" ]; then         \rehash;     elif [ -n "${POSH_VERSION:+x}" ]; then         :  # pass
+   57      else         \hash -r;     fi; }
+   58  __conda_activate() {     if [ -n "${CONDA_PS1_BACKUP:+x}" ]; then
+   59          PS1="$CONDA_PS1_BACKUP";         \unset CONDA_PS1_BACKUP;     fi;     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix "$@")" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   60  __conda_reactivate() {     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix reactivate)" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   61  conda() {     \local cmd="${1-__missing__}";     case "$cmd" in         activate|deactivate)             __conda_activate "$@";             ;;         install|update|upgrade|remove|uninstall)             __conda_exe "$@" || \return;             __conda_reactivate;             ;;         *)             __conda_exe "$@";             ;;     esac; }
+   62  if [ -z "${CONDA_SHLVL+x}" ]; then     \export CONDA_SHLVL=0
+   63      if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then         PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}";     else         PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}";     fi;     \export PATH; 
+   64      if [ -z "${PS1+x}" ]; then         PS1=;     fi; fi
+   65  clear
+   66  cd module_2_challenge/
+   67  code .
+   68  cd ~
+   69  cd SMU-VIRT-FIN-PT-02-2023-U-B/
+   70  git pull 
+   71  git commit 
+   72  git pull
+   73  git add .
+   74  git commit -m "changes"
+   75  git pull
+   76  cd 
+   77  cd module_2_challenge/
+   78  git add .
+   79  git commit -m "I made changes"
+   80  git psuh
+   81  git push
+   82  git add .
+   83  git commit -m "changes"
+   84  git push
+   85  git add .
+   86  git commit -m "changes"
+   87  git push
+   88  history 50 > terminal_history.txt

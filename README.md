@@ -28,7 +28,7 @@ To install the packages listed above you would have to type in the following com
 
 to use the loan qualifier application clone this repository and run the 'app.py' with python
 
-
+![Imports for app.py ](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/imports2.PNG)
 ---
 
 ## Contributors
