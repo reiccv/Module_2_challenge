@@ -29,9 +29,12 @@ def load_csv(csvpath):
             data.append(row)
     return data
 
-def save_csv(path_export, file_name):
-    full_name = csv(path_export, file_name)
-    with open (full_name, 'w', newline='') as csvfile:
-        writer = csv.writer(file_name)
-        csvfile.close()
+def save_csv(csvpath, data):
+    file_path_save = Path("qualifying_loans.csv")
+    with open (file = file_path_save, mode = 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=",")
+        for info in data:
+            csvwriter.writerow(info)
+        
+    return f"The qualifying loans have been saved to 'qualifying_loans.csv'."
  
