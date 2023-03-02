@@ -34,7 +34,13 @@ The following imports were made to import the neccesary libraries and functions 
 ![Imports for app.py](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/imports2.PNG)
 ---
 ![Function to load bank data](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_loadbank.PNG)
-![Function to get]
+![Function to get applicant info](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_getapp_info.PNG)
+![Function to find qualifying loans](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_qualifyingloans.PNG)
+![Function to save qualifying loans](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_save_loans.PNG)
+![Function to run the program](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_run.PNG)
+![Function to load the csv](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_loadcsv.PNG)
+![Function to save csv](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_savecsv.PNG)
+![]
 ## Contributors
 
 No other contributors
