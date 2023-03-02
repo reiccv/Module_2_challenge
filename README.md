@@ -33,14 +33,30 @@ python app.py'''
 The following imports were made to import the neccesary libraries and functions from other path files
 ![Imports for app.py](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/imports2.PNG)
 ---
+Function to load bank data
 ![Function to load bank data](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_loadbank.PNG)
+
+Function to get applicant info
 ![Function to get applicant info](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_getapp_info.PNG)
+
+Function to find qualifying loans
 ![Function to find qualifying loans](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_qualifyingloans.PNG)
+
+Function to save qualifying loans
 ![Function to save qualifying loans](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_save_loans.PNG)
+
+Function to run the program
 ![Function to run the program](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_run.PNG)
+
+Function to load the csv
 ![Function to load the csv](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_loadcsv.PNG)
+
+Function to save csv
 ![Function to save csv](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_savecsv.PNG)
-![]
+This code is able to create and save a csv file and allows the user to see how many loans they have qualified for.
+
+An applicants saved csv file containing all of their qualified loans
+![Saved csv](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/save_results.PNG)
 ## Contributors
 
 No other contributors
