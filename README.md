@@ -27,10 +27,14 @@ To install the packages listed above you would have to type in the following com
 ## Usage
 
 to use the loan qualifier application clone this repository and run the 'app.py' with python
+Python 
+python app.py
 
-![Imports for app.py ](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/imports2.PNG)
+The following imports were made to import the neccesary libraries and functions from other path files
+![Imports for app.py](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/imports2.PNG)
 ---
-
+![Function to load bank data](https://github.com/reiccv/Module_2_challenge/blob/main/images_for_readme/def_loadbank.PNG)
+![Function to get]
 ## Contributors
 
 No other contributors
